@@ -23,3 +23,20 @@ const hasLongerName = () => {
 hasLongerName();
 
 // Iteration 3: Loops
+
+console.log(hacker1.split("").join(" ").toUpperCase());
+console.log(hacker2.split("").reverse().join(" "));
+
+// Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
+
+const sortHackers = () => {
+  if (hacker1.localeCompare(hacker2) === -1) {
+    console.log("The driver's name goes first.");
+  } else if (hacker1.localeCompare(hacker2) === 1) {
+    console.log("Yo, the navigator goes first, definitely.");
+  } else {
+    console.log("What?! You both have the same name?");
+  }
+};
+
+sortHackers();
