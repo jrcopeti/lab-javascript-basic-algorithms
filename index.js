@@ -49,3 +49,19 @@ console.log(wordCount);
 
 const etCount = longText.split("et").length - 1;
 console.log(etCount);
+
+//bonus 2
+
+const phraseToCheck = "step on no pets";
+
+const isPalindrome = (phrase) => {
+  for (let i = 0; i < phrase.length / 2; i++) {
+    if (phrase[i] !== phrase[phrase.length - 1 - i]) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+
+console.log(isPalindrome(phraseToCheck));
