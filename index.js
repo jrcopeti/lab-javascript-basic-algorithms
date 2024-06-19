@@ -58,10 +58,10 @@ const isPalindrome = (phrase) => {
   for (let i = 0; i < phrase.length / 2; i++) {
     if (phrase[i] !== phrase[phrase.length - 1 - i]) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 };
 
 console.log(isPalindrome(phraseToCheck));
+
